@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>MG Library Syetem</title>
+    <title>MG Library System</title>
 </head>
 <body>
     <div class="h">
@@ -12,24 +12,35 @@
     <p>Mon-Sat:8:00AM-8:00PM</p>
     </div>
     <hr>
-    <div class="container">
-     <navbar>
-    <div class="r">
-    <h5>Hours & Location</h5>
-    <h5>help</h5>
-    <button>Login</button>
-    </div>
-    <h1>MG Library</h1>
-        <ul>
-            <li><a href="#Overview">Overview</a></li>
-            <li><a href="#Books">Books</a></li>
-            <li><a href="#Digitalself">Digitalself</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="Features">Features</a></li>
-        </ul>
-        <button>search</button>
-    </navbar>
-    </div>
+
+<div class="top-bar">
+  <div class="r">
+    <span>Hours & Location</span>
+    <span>Help</span>
+    <button class="login-btn">Login</button>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="navbar">
+
+    <h1 class="logo">
+      <img src="logo.jpg" alt="logo">
+      MG Library
+    </h1>
+
+    <ul>
+      <li><a href="#Overview">Overview</a></li>
+      <li><a href="#Books">Books</a></li>
+      <li><a href="#Digitalself">Digitalself</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Features">Features</a></li>
+    </ul>
+
+    <button>Search</button>
+  </nav>
+</div>
+
     <!--Hero-->
     <section>
         <div class="hero">
@@ -39,15 +50,70 @@
             <button>Search</button>
         </div>
     </section>
-    <!--search-->
-    <section>
-        <div class="search">
-            <h4>search the</h4>
-            <input type="text" id="search" name="search" placeholder="catalogue">
-            <h4>by</h4>
-            <input type="text" id="search" name="search" placeholder="keyword">
-        </div>
-    </section>
+
+<!-- SEARCH BAR (like image) -->
+<section class="search-bar">
+  <div class="search-container">
+
+    <span class="label">Search the</span>
+
+    <select>
+      <option>Catalogue</option>
+      <option>Website</option>
+      <option>FAQs</option>
+    </select>
+
+    <span class="label">by</span>
+
+    <select>
+      <option>Keyword</option>
+      <option>Title</option>
+      <option>Author</option>
+      <option>Subject</option>
+      <option>Tag</option>
+    </select>
+
+    <input type="text" placeholder="Enter search terms">
+
+    <button class="search-icon">🔍</button>
+
+  </div>
+
+  <div class="advanced">
+    <a href="#">Advanced Search</a>
+  </div>
+</section>
+
+    <!-- Trending Books Section -->
+<section class="trending">
+  <h2>Trending Books</h2>
+
+  <div class="book-list">
+    <div class="book-card">
+      <img src="history.jpg" alt="Book 1">
+      <h4>The History of Time</h4>
+      <p>Science</p>
+    </div>
+
+    <div class="book-card">
+      <img src="mystery.jpg" alt="Book 2">
+      <h4>Mystery of Island</h4>
+      <p>Mystery</p>
+    </div>
+
+    <div class="book-card">
+      <img src="Story.jpg" alt="Book 3">
+      <h4>Stories of Life</h4>
+      <p>Story</p>
+    </div>
+
+    <div class="book-card">
+      <img src="histories.jpg" alt="Book 4">
+      <h4>Ancient Civilizations</h4>
+      <p>History</p>
+    </div>
+  </div>
+</section>
     <!--footer-->
     <footer>
         <div class="footer">
@@ -77,14 +143,21 @@
             </nav>
         </div>
         <div class="con">
-        <a>      
-         <img src="">
-        <span class="mg">MG Library</span>
-        </a>
-        <p>© 2020 MG Library—
-            <a>@mglibrary</a>
-        </p>
-        </div>
+<div class="con">
+  <div class="con-inner">
+    <div class="left">
+      <img src="logo.jpg" alt="MG Library Logo" class="footer-logo">
+      <span class="mg">MG Library</span>
+    </div>
+    <div class="center">
+      <p>© 2020 MG Library — <a>@mglibrary</a></p>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
     </footer>
 </body>
 </html>
